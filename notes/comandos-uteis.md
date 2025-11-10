@@ -86,7 +86,7 @@ docker --version             # Mostra versão instalada
 sudo systemctl status docker # Verifica status do serviço
 sudo systemctl start docker  # Inicia o daemon
 sudo systemctl enable docker # Habilita na inicialização
-
+```
 ### 🔹 Imagens
 ```bash
 docker pull ubuntu:22.04     # Baixa imagem
@@ -139,6 +139,7 @@ docker compose exec app bash # Acessa container nomeado "app"
 ```
 ## ⚙️ Troubleshooting (resolução de problemas)
 ```bash
+docker run hello-world               # Testar o Docker rodando um container de teste
 sudo usermod -aG docker $USER        # Adiciona usuário ao grupo docker
 sudo systemctl restart docker        # Reinicia daemon
 sudo journalctl -fu docker.service   # Ver logs do Docker
