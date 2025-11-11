@@ -99,6 +99,9 @@ docker ps                    # Lista containers ativos
 docker ps -a                 # Lista todos (ativos e parados)
 docker run hello-world       # Teste do Docker
 docker run -it ubuntu bash   # Abre shell interativo no Ubuntu
+docker run -d app            # Evita que o terminal trave
+docker run -P app            # Atribui uma porta aleatoria para o container
+docker run -p 3000:80 app    # Atribui uma porta especifica para o container
 docker start ID              # Inicia container existente
 docker stop ID               # Para container
 docker rm ID                 # Remove container
